@@ -152,12 +152,6 @@ body {
   color: #555;
 }
 
-#about .small {
-  font-size: 1.2rem;
-  color: #666;
-  font-weight: 600;
-}
-
 .about-img {
   flex: 1 1 400px;
   padding: 30px;
@@ -279,6 +273,7 @@ body {
 }
 h2 {
   color: #333;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -291,6 +286,7 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 .item {
@@ -301,28 +297,6 @@ li {
 .price {
   margin-left: 20px;
   text-align: right;
-}
-
-.burger {
-  color: #2196f3;
-}
-.tiffins {
-  color: #9c27b0;
-}
-.rotis {
-  color: #ffeb3b;
-}
-.rice {
-  color: #f44336;
-}
-.juices {
-  color: #3f51b5;
-}
-.milkshakes {
-  color: #e91e63;
-}
-.icecreams {
-  color: #ff9800;
 }
 
 .food-description p {
@@ -422,7 +396,11 @@ button {
 
 .contact-container {
   display: flex;
+  justify-content: space-between;
   background: #fff;
+}
+.contacts {
+  margin-left: 20px;
 }
 
 .contact-img {
@@ -437,27 +415,28 @@ button {
   object-fit: cover;
 }
 
-.form-container {
-  padding: 1rem;
-  width: 50%;
-  margin: auto;
-}
-
 .form-container h2 {
-  font-size: 2.7rem;
+  font-size: 25px;
   font-weight: 500;
   color: #444;
   margin-bottom: 1rem;
   margin-top: -1.2rem;
 }
+.form-container .contacts {
+  display: flex;
+
+  flex-direction: column;
+}
 
 .form-container a {
-  font-size: 1.3rem;
+  font-size: 16px;
+  height: auto;
+  width: fit-content;
 }
 
 #footer h2 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 25px;
   padding: 2.6rem;
   font-weight: 500;
   color: #fff;
@@ -621,6 +600,7 @@ button {
   .contact-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .contact-img {
@@ -633,12 +613,6 @@ button {
     top: 06px;
     right: 15px;
     font-size: 3rem;
-  }
-
-  .navbar .menu-items li {
-    margin-bottom: 2.5rem;
-    font-size: 1.8rem;
-    font-weight: 500;
   }
 }
 
